@@ -1,5 +1,4 @@
 import MainWebsiteLayout from '@/layout/MainWebsiteLayout'
-import React from 'react'
 
 type Props = {}
 
@@ -8,7 +7,7 @@ function IndustryAdviser({}: Props) {
     <MainWebsiteLayout>
 
     <div>
-        
+
     </div>
     </MainWebsiteLayout>
   )
