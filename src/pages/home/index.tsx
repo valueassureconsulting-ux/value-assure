@@ -6,6 +6,7 @@ import OurApproach from './OurApproach'
 import HomeDiagram from './HomeDiagram'
 import SolutionsWeOffer from './SolutionsWeOffer'
 import IndustriesWeServe from './IndustriesWeServe'
+import Why from './Why'
 
 type Props = {}
 
@@ -57,8 +58,8 @@ function HomePage({ }: Props) {
 
 
           <BusinessChallenges />
-
-          <OurApproach />
+          <Why />
+          <OurApproach /> 
           <SolutionsWeOffer />
           <IndustriesWeServe />
         </div>

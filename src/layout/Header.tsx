@@ -45,7 +45,8 @@ const solutionItems = [
 const navItems = [
     { name: 'Platform', href: '/platform' },
     { name: 'Industry Sectors', href: '/industry-sectors' },
-    { name: 'SAP Data Quality', href: '/dap-data-quality' },
+    { name: 'Industry Advisor', href: '/industry-adviser' },
+    { name: 'SAP Data Quality', href: '/sap-data-quality' },
     { name: 'Resources', href: '/resources' },
     { name: 'Partners', href: '/partners' },
     { name: 'About', href: '/about' },

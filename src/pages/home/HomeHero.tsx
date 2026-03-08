@@ -271,21 +271,21 @@ export default function HomeHero({ }: Props) {
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-                            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[6.5rem] font-extrabold tracking-tighter text-foreground leading-[0.95] mb-2"
+                            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[5rem] font-extrabold tracking-tighter text-foreground leading-[0.95] mb-2"
                         >
                             <GradientText
                                 colors={isDark ? ["#e2e8f0", "#8EBDFF", "#e2e8f0", "#d4a843", "#e2e8f0"] : ["#0f172a", "#1e5faa", "#0f172a", "#b8860b", "#0f172a"]}
                                 animationSpeed={6}
                                 className="inline"
                             >
-                                Data You Can
+                                Transforming Enterprise Data into
                             </GradientText>
                         </motion.h1>
 
-                        <div className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[6.5rem] font-extrabold tracking-tighter leading-[0.95] mb-10 h-[1.1em] overflow-hidden flex items-center justify-center">
+                        <div className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[3rem] font-extrabold tracking-tighter leading-[0.95] mb-10 h-[1.1em] overflow-hidden flex items-center justify-center">
                             <span className="text-primary">
                                 <RotatingText
-                                    texts={["Trust.", "Govern.", "Certify.", "Validate.", "Rely On."]}
+                                    texts={["Trusted Business Value.", "Specialized in SAP Data Quality.", "Migration Assurance","AI-Driven Validation.", "Reliable data across SAP ECC.", " S/4HANA, and integrated systems."]}
                                     rotationInterval={2500}
                                     splitBy="words"
                                     staggerDuration={0}

@@ -79,76 +79,10 @@ export default function About({ }: Props) {
     const isDark = theme === "dark" ||
         (theme === "system" && typeof window !== "undefined" &&
             window.matchMedia("(prefers-color-scheme: dark)").matches)
-    const auroraColors = useMemo((): [string, string, string] => {
-        return isDark
-            ? ["#1a3a6b", "#27D4FF", "#b7791f"]
-            : ["#4361ee", "#3a86ff", "#f77f00"]
-    }, [isDark])
 
 
     return (
         <section className="relative bg-background">
-
-            <motion.div
-                className="relative pt-36 pb-5 flex flex-col items-center justify-center overflow-hidden"
-            >
-                <div className="absolute inset-0 z-0" style={{
-                    background: `radial-gradient(circle at 20% 30%, ${auroraColors[0]}33, transparent 80%), radial-gradient(circle at 70% 20%, ${auroraColors[1]}33, transparent 80%), radial-gradient(circle at 50% 80%, ${auroraColors[2]}33, transparent 80%)`
-                }}>
-
-                </div>
-
-                <div className="relative z-10 text-center px-6 sm:px-8 max-w-5xl mx-auto">
-                    <motion.div
-                        initial={{ scaleX: 0 }}
-                        animate={{ scaleX: 1 }}
-                        className="w-20 h-px bg-primary mx-auto mb-8 origin-center"
-                    />
-
-                    <motion.span
-                        initial={{ opacity: 0, letterSpacing: "0.6em" }}
-                        animate={{ opacity: 1, letterSpacing: "0.3em" }}
-                        className="text-xs sm:text-sm font-semibold uppercase text-primary tracking-[0.3em] block mb-8"
-                    >
-                        About Value Assure Consultancy
-                    </motion.span>
-
-                    <div className="overflow-hidden mb-2">
-                        <motion.h1
-                            initial={{ y: "110%" }}
-                            animate={{ y: 0 }}
-                            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground leading-[1.05] tracking-tight"
-                        >
-                            Building Trusted
-                        </motion.h1>
-                    </div>
-
-                    <div className="overflow-hidden mb-10">
-                        <motion.h1
-                            initial={{ y: "110%" }}
-                            animate={{ y: 0 }}
-                            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-primary leading-[1.05] tracking-tight"
-                        >
-                            Data Foundations
-                        </motion.h1>
-                    </div>
-
-                    <motion.p
-                        initial={{ opacity: 0, y: 24 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
-                    >
-                        Through clarity, discipline, and sustained ownership.
-                    </motion.p>
-
-                    <motion.div
-                        initial={{ scaleX: 0 }}
-                        animate={{ scaleX: 1 }}
-                        className="w-20 h-px bg-primary mx-auto mt-10 origin-center"
-                    />
-                </div>
-
-            </motion.div>
 
 
             <div className="relative py-0 overflow-hidden">

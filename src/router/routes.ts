@@ -12,6 +12,7 @@ import PartnersPage from '@/pages/partners'
 import AboutPage from '@/pages/about'
 import ContactPage from '@/pages/contact'
 import NotFound from '@/pages/NotFound'
+import IndustryAdviser from '@/pages/industry-adviser'
 
 export const routes = [
     {
@@ -55,7 +56,12 @@ export const routes = [
         component: IndustrySectorsPage
     },
     {
-        path: '/dap-data-quality',
+        path: '/industry-adviser',
+        name: 'Industry Adviser',
+        component: IndustryAdviser
+    },
+    {
+        path: '/sap-data-quality',
         name: 'SAP Data Quality',
         component: DapDataQualityPage
     },
