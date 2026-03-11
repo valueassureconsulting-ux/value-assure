@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { motion } from "motion/react"
-import { Factory, Building2, Plane, Server, ArrowRight, Check, Zap, School } from "lucide-react"
+import { Factory, Building2, Plane, Server, ArrowRight, School } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import BlurText from "@/components/BlurText"
 import RotatingText from "@/components/RotatingText"

@@ -1,5 +1,5 @@
 import { motion } from "motion/react"
-import { ArrowRight, Mail, ShieldCheck, Activity, Layers, Gauge, Database, CheckCircle2, BarChart3, Link2 } from "lucide-react"
+import { ArrowRight, Mail, ShieldCheck, Activity, Layers, Gauge, Database, CheckCircle2, BarChart3 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useNavigate } from "react-router-dom"
 import {  useMemo } from "react"
