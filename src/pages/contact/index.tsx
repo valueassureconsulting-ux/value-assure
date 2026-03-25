@@ -68,14 +68,14 @@ const contactInfo = [
     {
         icon: Mail,
         label: "Email Us",
-        value: "contact@valueassure.com",
-        href: "mailto:contact@valueassure.com",
+        value: "info@valueassuredconsulting.com",
+        href: "mailto:info@valueassuredconsulting.com",
     },
     {
         icon: Phone,
         label: "Call Us",
-        value: "+91 98765 43210",
-        href: "tel:+919876543210",
+        value: "+91 9967731105",
+        href: "tel:+919967731105",
     },
     {
         icon: MapPin,
@@ -382,7 +382,7 @@ function ContactPage({}: Props) {
                                                     <Input
                                                         id="phone"
                                                         type="tel"
-                                                        placeholder="+91 98765 43210"
+                                                        placeholder="+91 9967731105"
                                                         className="h-11 rounded-xl bg-background/50"
                                                     />
                                                 </div>

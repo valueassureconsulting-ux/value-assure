@@ -46,8 +46,8 @@ const socialLinks = [
 
 const contactInfo = {
     address: 'Navi Mumbai, Maharashtra, India',
-    email: 'contact@valueassure.com',
-    phone: '+91 98765 43210',
+    email: 'info@valueassuredconsulting.com',
+    phone: '+91 9967731105',
 }
 
 function Footer() {
