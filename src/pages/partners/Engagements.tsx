@@ -13,7 +13,6 @@ import {
     Handshake,
     ArrowRight
 } from "lucide-react"
-import ScrollFloat from "@/components/ScrollFloat"
 import ClickSpark from "@/components/ClickSpark"
 import { useNavigate } from "react-router-dom"
 import { Button } from "@/components/ui/button"
@@ -288,17 +287,15 @@ export default function Engagements({}: Props) {
                             Client Impact
                         </motion.span>
 
-                        <ScrollFloat
-                            containerClassName="!mb-0"
-                            textClassName="text-1xl sm:text-2xl lg:text-3xl font-bold text-foreground tracking-tight"
-                            animationDuration={0.8}
-                            ease="back.out(1.5)"
-                            scrollStart="center bottom+=30%"
-                            scrollEnd="bottom bottom-=10%"
-                            stagger={0.02}
+                        <motion.h2
+                            initial={{ opacity: 0, y: 16 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                            className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground tracking-tight"
                         >
                             What This Means for Our Clients
-                        </ScrollFloat>
+                        </motion.h2>
 
                         <motion.p
                             initial={{ opacity: 0, y: 15 }}

@@ -17,8 +17,6 @@ import {
     Focus,
     Heart
 } from "lucide-react"
-import RotatingText from "@/components/RotatingText"
-import ElectricBorder from "@/components/ElectricBorder"
 import ShinyText from "@/components/ShinyText"
 
 type Props = {}
@@ -103,19 +101,14 @@ export default function Partners({}: Props) {
                                 initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-                                className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight text-foreground mb-6 leading-[0.95]"
+                                className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mb-6 leading-tight"
                             >
                                 Our{" "}
-                                <span className="relative inline-block">
-                                    <RotatingText
-                                        texts={["Partners", "Ecosystem", "Alliance"]}
-                                        rotationInterval={3000}
-                                        mainClassName="text-primary"
-                                        staggerDuration={0.03}
-                                        splitBy="characters"
-                                        transition={{ type: "spring", damping: 20, stiffness: 200 }}
-                                    />
-                                </span>
+                                <span className="text-primary">Partners</span>
+                                <span className="text-foreground/30"> · </span>
+                                <span className="text-primary">Ecosystem</span>
+                                <span className="text-foreground/30"> · </span>
+                                <span className="text-primary">Alliance</span>
                             </motion.h1>
 
                             <motion.p
@@ -306,13 +299,8 @@ export default function Partners({}: Props) {
                         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                         style={{ scale: scaleProgress }}
                     >
-                        <ElectricBorder 
-                            color="#5227FF" 
-                            speed={1.5} 
-                            chaos={0.15} 
-                            borderRadius={24}
-                        >
-                            <div className="p-8 sm:p-10 lg:p-14 bg-card rounded-3xl">
+                        <div className="relative rounded-3xl p-px bg-linear-to-br from-primary/50 via-primary/20 to-primary/5 shadow-2xl shadow-primary/10">
+                            <div className="p-8 sm:p-10 lg:p-14 bg-card rounded-[calc(1.5rem-1px)]">
                                 <div className="grid lg:grid-cols-12 gap-10 items-center">
                                     <div className="lg:col-span-5">
                                         <div className="flex items-center gap-5 mb-6">
@@ -399,7 +387,7 @@ export default function Partners({}: Props) {
                                     </div>
                                 </div>
                             </div>
-                        </ElectricBorder>
+                        </div>
                     </motion.div>
                 </div>
             </div>

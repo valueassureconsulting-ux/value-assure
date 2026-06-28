@@ -4,17 +4,8 @@ import { motion } from 'motion/react'
 import {
     Mail,
     Phone,
-    MapPin,
-    Linkedin,
-    Twitter,
-    Facebook,
-    Youtube,
-    Send
 } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
 import { Separator } from '@/components/ui/separator'
-import { cn } from '@/lib/utils'
 
 const footerLinks = {
     solutions: [
@@ -37,15 +28,7 @@ const footerLinks = {
     ],
 }
 
-const socialLinks = [
-    { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com' },
-    { name: 'Twitter', icon: Twitter, href: 'https://twitter.com' },
-    { name: 'Facebook', icon: Facebook, href: 'https://facebook.com' },
-    { name: 'YouTube', icon: Youtube, href: 'https://youtube.com' },
-]
-
 const contactInfo = {
-    address: 'Navi Mumbai, Maharashtra, India',
     email: 'info@valueassuredconsulting.com',
     phone: '+91 9967731105',
 }
@@ -58,38 +41,6 @@ function Footer() {
             <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-border to-transparent" />
 
             <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5 }}
-                    className="py-12 lg:py-16"
-                >
-                    <div className="rounded-2xl bg-card/60 backdrop-blur-sm border border-border/50 p-6 sm:p-8 lg:p-10">
-                        <div className="flex flex-col items-center text-center lg:flex-row lg:items-center lg:justify-between lg:text-left gap-6">
-                            <div className="max-w-xl">
-                                <h3 className="text-xl font-semibold text-foreground">Stay Updated</h3>
-                                <p className="mt-2 text-sm text-muted-foreground">
-                                    Subscribe to our newsletter for the latest insights, updates, and industry trends delivered to your inbox.
-                                </p>
-                            </div>
-                            <form className="flex w-full max-w-md flex-col gap-3 sm:flex-row" onSubmit={(e) => e.preventDefault()}>
-                                <Input
-                                    type="email"
-                                    placeholder="Enter your email"
-                                    className="h-12 flex-1 bg-background/50 border-border/50 focus:border-primary"
-                                />
-                                <Button className="h-12 px-8 group" type="submit">
-                                    Subscribe
-                                    <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                                </Button>
-                            </form>
-                        </div>
-                    </div>
-                </motion.div>
-
-                <Separator className="bg-border/30" />
-
                 <div className="py-12 lg:py-16">
                     <div className="grid gap-10 lg:grid-cols-12 lg:gap-12">
                         <div className="lg:col-span-3">
@@ -112,25 +63,7 @@ function Footer() {
                                     their most valuable asset - data.
                                 </p>
 
-                                <div className="mt-6 flex gap-3">
-                                    {socialLinks.map((social) => (
-                                        <a
-                                            key={social.name}
-                                            href={social.href}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className={cn(
-                                                "flex h-10 w-10 items-center justify-center rounded-lg",
-                                                "bg-secondary/50 border border-border/50",
-                                                "text-muted-foreground hover:text-primary hover:border-primary/50 hover:bg-primary/10",
-                                                "transition-all duration-300"
-                                            )}
-                                            aria-label={social.name}
-                                        >
-                                            <social.icon className="h-4 w-4" />
-                                        </a>
-                                    ))}
-                                </div>
+
                             </motion.div>
                         </div>
 
@@ -207,13 +140,6 @@ function Footer() {
                             >
                                 <h3 className="text-sm font-semibold text-foreground">Contact Us</h3>
                                 
-                                <div className="flex items-start gap-3 group">
-                                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                                        <MapPin className="h-4 w-4" />
-                                    </div>
-                                    <p className="text-sm text-muted-foreground leading-relaxed">{contactInfo.address}</p>
-                                </div>
-
                                 <div className="flex items-center gap-3 group">
                                     <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                                         <Mail className="h-4 w-4" />

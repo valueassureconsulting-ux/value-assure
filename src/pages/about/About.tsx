@@ -1,4 +1,4 @@
-import {  useRef, useState } from "react"
+import { useRef, useState } from "react"
 import { motion, useInView } from "motion/react"
 import {
     Search,
@@ -12,8 +12,6 @@ import {
     Fingerprint,
     Plus
 } from "lucide-react"
-import ScrollReveal from "@/components/ScrollReveal"
-import ScrollFloat from "@/components/ScrollFloat"
 import CountUp from "@/components/CountUp"
 import TrueFocus from "@/components/TrueFocus"
 import { useTheme } from "@/providers/theme-provider"
@@ -95,16 +93,15 @@ export default function About({ }: Props) {
 
                 <div className="relative mx-auto max-w-6xl px-6 sm:px-8 lg:px-12">
                     <div className="max-w-4xl">
-                        <ScrollReveal
-                            enableBlur={true}
-                            baseOpacity={0.01}
-                            baseRotation={5}
-                            blurStrength={1}
-                            containerClassName="mb-14"
-                            textClassName="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-foreground leading-snug tracking-tight"
+                        <motion.p
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                            className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-foreground leading-snug tracking-tight mb-14"
                         >
                             Organizations today operate in increasingly complex data environments driven by digital transformation, SAP modernization, regulatory expectations, and growing integration across systems.
-                        </ScrollReveal>
+                        </motion.p>
 
                         <motion.div
                             initial={{ opacity: 0, x: -40 }}
@@ -130,13 +127,15 @@ export default function About({ }: Props) {
 
                 <div className="relative mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
                     <div className="mb-16 lg:mb-20">
-                        <ScrollFloat
-                            containerClassName="mb-4"
-                            textClassName="text-3xl lg:text-xl font-bold text-foreground tracking-tight"
-                            
+                        <motion.h2
+                            initial={{ opacity: 0, y: 16 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                            className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight mb-4"
                         >
                             Our Philosophy
-                        </ScrollFloat>
+                        </motion.h2>
 
                         <motion.div
                             initial={{ scaleX: 0 }}
@@ -217,12 +216,15 @@ export default function About({ }: Props) {
             <div className="relative py-10">
                 <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
                     <div className="text-center mb-16 lg:mb-24">
-                        <ScrollFloat
-                            containerClassName="mb-6 flex justify-center"
-                            textClassName="text-4xl sm:text-5xl lg:text-5xl font-bold text-foreground tracking-tight"
+                        <motion.h2
+                            initial={{ opacity: 0, y: 16 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                            className="text-4xl sm:text-5xl font-bold text-foreground tracking-tight mb-6 flex justify-center"
                         >
                             What We Do
-                        </ScrollFloat>
+                        </motion.h2>
 
                         <motion.p
                             initial={{ opacity: 0, y: 16 }}
@@ -363,12 +365,15 @@ export default function About({ }: Props) {
 
                 <div className="relative mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
                     <div className="mb-14">
-                        <ScrollFloat
-                            containerClassName="mb-8"
-                            textClassName="text-4xl sm:text-5xl lg:text-5xl font-bold text-foreground tracking-tight"
+                        <motion.h2
+                            initial={{ opacity: 0, y: 16 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                            className="text-4xl sm:text-5xl font-bold text-foreground tracking-tight mb-8"
                         >
                             How We Work
-                        </ScrollFloat>
+                        </motion.h2>
 
                         <div className="max-w-xl">
                             <TrueFocus
@@ -409,16 +414,15 @@ export default function About({ }: Props) {
                                 className="w-16 h-px bg-primary/40 mx-auto mb-8 origin-center"
                             />
 
-                            <ScrollReveal
-                                enableBlur={true}
-                                baseOpacity={0.01}
-                                baseRotation={5}
-                                blurStrength={3}
-                                containerClassName=""
-                                textClassName="text-lg sm:text-xl text-muted-foreground leading-relaxed"
+                            <motion.p
+                                initial={{ opacity: 0, y: 16 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.7 }}
+                                className="text-lg sm:text-xl text-muted-foreground leading-relaxed"
                             >
                                 We partner closely with business and IT stakeholders to ensure clarity of roles, accountability, and alignment with organizational priorities.
-                            </ScrollReveal>
+                            </motion.p>
 
                             <motion.div
                                 initial={{ scaleX: 0 }}

@@ -4,7 +4,6 @@ import {
     Send,
     Mail,
     Phone,
-    MapPin,
     Clock,
     CheckCircle2,
     Building2,
@@ -76,12 +75,6 @@ const contactInfo = [
         label: "Call Us",
         value: "+91 9967731105",
         href: "tel:+919967731105",
-    },
-    {
-        icon: MapPin,
-        label: "Visit Us",
-        value: "Navi Mumbai, Maharashtra, India",
-        href: "#",
     },
     {
         icon: Clock,

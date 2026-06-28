@@ -42,7 +42,7 @@ export default function Founder({ }: Props) {
                         className="relative min-h-80 lg:min-h-0"
                     >
                         <img
-                            src="/founder.png"
+                            src="/rajeev.jpg"
                             alt="Founder"
                             className="absolute inset-0 w-full h-full object-cover object-center"
                         />
@@ -69,8 +69,9 @@ export default function Founder({ }: Props) {
                         <div className="absolute bottom-0 left-0 right-0 px-7 pb-7 pt-16 bg-linear-to-t from-black/90 via-black/60 to-transparent">
                             <p className="text-xs font-semibold uppercase tracking-widest text-white/50 mb-1">Value Assure Consulting</p>
                             <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight tracking-tight">
-                                Founder
+                                Rajeev
                             </h2>
+                            <p className="text-sm text-white/60 font-medium mt-1">Founder & Principal Consultant</p>
                         </div>
                     </motion.div>
 
