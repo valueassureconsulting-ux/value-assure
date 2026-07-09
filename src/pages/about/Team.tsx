@@ -11,7 +11,7 @@ const teamMembers = [
         bio: [
             "Anil Bhandarre, a Mechanical Engineer from Mumbai University, has 32 years of experience across design, manufacturing, sales, and marketing.",
             "With a career spanning multiple industries — including electronics, construction, and railways — Anil has led over 1,000 projects in hospitality, IT hubs, shipping, and more.",
-            "His deep network across Asia and proven success in building large-scale AI-powered systems make him a key driver of innovation at Sentient Logics AI.",
+            "His deep network across Asia and proven success in building large-scale AI-powered systems make him a key driver of innovation at Value Assure Consulting.",
             "Anil's metric-driven achievements have highlighted revenue growth, operations scaling, and team scaling — showcasing his ability to lead, strategize, and close deals.",
         ],
     },
